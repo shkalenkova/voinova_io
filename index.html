@@ -1387,7 +1387,7 @@ footer {
       <p class="cta-sub">Оставьте заявку, опишите вашу ситуацию в блоке «Вопрос или комментарий», я отвечу вам на электронную почту в течении дня.</p>
     </div>
     <div class="reveal visible">
-      <form action="https://api.3forms.dev/submit" method="POST" id="contact-form">
+      <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
         <input type="hidden" name="access_key" value="8f526e41-b5ed-4b81-b77d-d463f9356ba5">
         <input type="hidden" name="subject" value="Новая заявка IO">
         <input type="checkbox" name="botcheck" style="display:none;">
@@ -1472,7 +1472,7 @@ if (contactForm) {
     hint.textContent = '';
     const formData = new FormData(contactForm);
     try {
-      const res = await fetch('https://api.3forms.dev/submit', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: formData
       });
